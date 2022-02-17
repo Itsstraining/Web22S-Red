@@ -1,0 +1,30 @@
+.all{
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    margin-left: 10%;
+}
+.container1{
+    justify-content: center ;
+    background-color: black;
+    width: 80%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.info{
+    display: flex;
+}
+#col2{
+    border: 10px;
+    border-color: black;
+    padding: 10px;
+    margin-left: 30px;
+    color: red;
+}
+p{
+    margin: 10px;
+}
+.pay{
+    float: right;
+}

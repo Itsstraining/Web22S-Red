@@ -1,0 +1,25 @@
+.foot{
+    background-image: url(../../../assets/images/footer.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    position: relative;
+    
+}
+
+.em-box{
+    display: flex;
+}
+#mail{
+    border-radius: 20px;
+    display: inline-block;
+    font-size: larger;
+}
+#thankyou{
+    height: fit-content;
+    text-align: center;
+    color: rgb(7, 6, 7);
+    font-weight: 300;
+    // margin: -300px 200px 0px 0px;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,0 +1,11 @@
+<div>
+    <p style="color: black; font-size: larger;" >You will charge:  {{ ketQua |number }} vnd</p>
+</div>
+<!-- <button (click)="tinhTongTien()" >Tinh tien</button> -->
+<div class="container">
+    <div  class="layout">
+        <app-item *ngFor="let item of ListItem" [item]="item" (changeEvent)= "tinhTongTien($event)"></app-item>
+    </div>
+  
+</div>
+

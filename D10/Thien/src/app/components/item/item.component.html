@@ -1,0 +1,14 @@
+
+<div class="container">
+    <img class="img" matTooltip="More information"
+    aria-label="Button that displays a tooltip when focused or hovered over" [src]="item.photoUrl">
+    <h2 style="color: yellow;">{{item.name}}</h2>
+    <p class=" price">{{item.price |number }} vnd</p>
+    <app-quantity [couter]="item.quantity" (onChange)="handle($event)" ></app-quantity>
+</div>
+
+
+
+
+
+

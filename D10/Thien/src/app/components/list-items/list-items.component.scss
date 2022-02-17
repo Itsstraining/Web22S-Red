@@ -1,0 +1,18 @@
+.layout{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    
+    
+}
+.layout :hover{
+    box-shadow: 5px 5px 5px 8px silver;
+}
+.container{
+    margin: 10px;
+    border: solid 2px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+}
