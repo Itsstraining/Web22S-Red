@@ -1,0 +1,9 @@
+<div class="container-list-item">
+    <app-item *ngFor="let item of ListItem" [item]="item" (itemChange)="pay(item.quantity, $event)" ></app-item>
+</div>
+<!-- 
+<div class="total">
+    <p>Tính tổng tiền: {{sum | number}} vnđ </p> -->
+    <!-- <button (click)="this.paymentSv.tinhTongTien(ListItem)" >total</button>  -->
+    <!-- <button (click)="pay()" >total</button>  -->
+<!-- </div> -->

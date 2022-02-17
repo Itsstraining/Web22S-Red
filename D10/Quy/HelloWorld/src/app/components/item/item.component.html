@@ -1,0 +1,15 @@
+<div class="layout">
+    <div class="container">
+    <img [src]="item.photourl">
+    <p class="name">{{item.name}}</p>
+    <p *ngIf="item.price != '0'" class="price">{{item.price | number}} vnđ</p>
+    <p *ngIf="item.price  == '0'" class="price">Free</p>
+    <p class="quantity">SL: {{item.quantity}}</p>
+        <div class="count">
+        <button class="mark" (click)="increase()">+</button>
+        <p class="number" style="color: white;">{{item.quantity}}</p>
+        <button class="mark"(click)="decrease()">-</button>
+        </div>
+        <button (click)="navigate()" class="tag" mat-stroked-button color="primary" style="background-color: white;">Buy</button>
+    </div>
+</div>
