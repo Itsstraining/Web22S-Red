@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn:'root'
 })
 export class ServicesService {
 
@@ -10,21 +10,21 @@ export class ServicesService {
   array = [
     {
       name:'Ducati',
-      newPrice:70, 
+      newPrice:300, 
       Image:"./../../../assets/Image/Model-Menu-MY20-Panigale-V4-Red (1).png",
       Quantity: 0
     },
 
     {
       name:'Ducati',
-      newPrice:100, 
+      newPrice:400, 
       Image:"./../../../assets/Image/2.png",
       Quantity: 0
     },
 
     {
       name:'Ducati',
-      newPrice:90, 
+      newPrice:500, 
       Image:"./../../../assets/Image/3.png",
       Quantity: 0
 
@@ -32,7 +32,7 @@ export class ServicesService {
 
     {
       name:'Ducati',
-      newPrice:100, 
+      newPrice:300, 
       Image:"./../../../assets/Image/2.png",
       Quantity: 0
     }

@@ -62,7 +62,6 @@
 	padding: 1.5rem 7%;
 	border-bottom: #010103;
 	justify-content: space-between;
-	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -142,4 +141,88 @@ img{
 	margin-top: 30px;
 	font-size: 50px;
 }
+
+.footer {
+	font-size: 20px;
+}
+/* Media queries */
+@media (max-width:991px) {
+	.html {
+		font-size: 55%;
+	}
+	.header {
+		padding: 1.5rem 2rem;
+	}
+
+	img{
+		height: auto;
+	}
+
+	section {
+		padding: 2rem;
+	}
+}
+
+@media (max-width:768px) {
+
+	#btn {
+		display: inline-block;
+	}
+
+	img {
+		height:auto;
+		width: 150px;
+	}
+
+	.header .navbar {
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		background: #fff;
+		width: 30rem;
+		height: calc(100vh - 9.5rem);
+	}
+
+	img{
+		height: auto;
+		width: auto;
+	}
+
+
+	.header .navbar a {
+		color: var(--black);
+		display: block;
+		margin: 1.5rem;
+		padding: .5rem;
+		font-size: 2rem;
+	}
+
+	.header .search-form {
+		width: 90%;
+		right: 2rem;
+	}
+
+	.home {
+		background-position: left;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.home .content h3{
+		font-size: 4.5rem;
+	}
+
+	.home .content p {
+		font-size: 1.5rem;
+	}
+}
+
+
+
+@media (max-width:450px) {
+
+	html {
+		font-size: 50%;
+	}
+}	
 

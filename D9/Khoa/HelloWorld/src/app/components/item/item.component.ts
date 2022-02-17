@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ServicesService } from '../../services/services.service'
+import { ServicesService } from '../../services/services.service';
+import {  PaymentService} from '../../services/payment.service';
 @Component({
   selector: 'app-item',
   templateUrl: './item.component.html',
@@ -8,7 +9,8 @@ import { ServicesService } from '../../services/services.service'
 export class ItemComponent implements OnInit {
 
   constructor(
-    public ServicesService:ServicesService
+    public ServicesService:ServicesService,
+    public dataService: PaymentService 
   ) { }
   @Input() item!:any
   ngOnInit(): void {
@@ -16,11 +18,8 @@ export class ItemComponent implements OnInit {
   }
 
   getData(){
-    let total = 0;
-    for(let i = 0; i<this.ServicesService.array.length; i++){
-      total += this.ServicesService.array[i].Quantity * this.ServicesService.array[i].newPrice;
-    }
-    alert(total)
+    let totalPayment = this.dataService.getTotal()
+    alert ('TỔng tiền các xe mua là:'+ totalPayment)
   }
-
 }
+

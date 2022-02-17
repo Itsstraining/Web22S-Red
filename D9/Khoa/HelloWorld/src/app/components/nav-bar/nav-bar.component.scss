@@ -58,11 +58,28 @@
 	padding: 1.5rem 7%;
 	border-bottom: #010103;
 	justify-content: space-between;
-	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 1000;
+}
+
+.material-icons {
+	transition: .2s linear;
+	cursor: pointer;
+	float: right;
+	border-radius: 50%;
+	background-color: #fff;
+	font-size: 40px;
+}
+
+.material-icons:hover {	
+	background-color: red;
+
+}
+
+.material-icons-cart {
+	background-color: #ccc;
 }
 
 .header .logo img {
@@ -107,6 +124,7 @@ img{
 	height: auto;
 	width: 400px;
 }
+
 
 
 .products .box-container .image:hover {
