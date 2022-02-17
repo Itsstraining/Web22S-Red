@@ -1,0 +1,12 @@
+.container-list-item {
+  display: grid;
+  grid-gap: 1rem;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+.total{
+  font-size: 25px;
+  color: #867AE9;
+}

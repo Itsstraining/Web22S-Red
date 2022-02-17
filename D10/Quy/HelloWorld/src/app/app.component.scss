@@ -1,0 +1,84 @@
+form {
+    background: black;
+    margin: 0 auto;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px grey;
+  }
+  
+  form * {
+    box-sizing: border-box;
+  }
+  
+  form table {
+    width: 100%;
+    border-collapse: collapse;
+    // border-radius: 100%;
+  }
+  
+//   form table tr, form table td {
+//     border: 1px solid #eee;
+//   }
+  
+  form table tr:first-child input {
+    height: 100px;
+    padding: 0 10px;
+    font-weight: 700;
+  }
+  
+  form table tr:not(:first-child) td {
+    height: 70px;
+  }
+  
+  form table tr:not(:first-child) td input {
+    height: 100%;
+    // border-radius: 100%;
+  }
+  
+  form table input {
+    width: 100%;
+    display: block;
+    border: 0;
+    font-size: 16px;
+  }
+  
+  form table input:focus {
+    outline: none;
+  }
+  
+  form table input:hover {
+    background: grey;
+    transition: all .2s ease-in-out;
+  }
+  
+  form table input.operator {
+    font-weight: 700;
+    color: white;
+    background: violet;
+  }
+form table input.equal{
+    width: 100%;
+    height: auto;
+    background-color: blue;
+    color: white;
+    border-radius: 50px;
+}
+form table input.display{
+    background-color: whitesmoke;
+    text-align: right;
+    // border-radius: 5px;
+}
+form table input.operator{
+  border-radius: 100%;
+}
+form table input.number{
+  border-radius: 100%;
+}
+form table input.display{
+  border-radius: 5px;
+}
+td {
+  color: white;
+  text-align: center;
+}
