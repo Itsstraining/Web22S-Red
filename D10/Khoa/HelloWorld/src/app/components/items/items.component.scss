@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+:root {
+	--main-color: #cc0000; 
+	--black:  #13131a;
+	--bg: #010103;
+	--light-white: #aaa;
+	--red: #DC0000;
+	--border: .1rem solid rgba(255,255,255,.3);
+ 	}
+
+.App_counter {
+	margin-left: 100px;
+	width: 30px;
+	margin-top: 30px;
+}
+
+.btn {
+	margin-top: 1rem;
+	display: inline-block;
+	padding: .9rem 3rem;
+	font-size: 1.7rem;
+	color: var(--red);
+	background: var(--main-color);
+	cursor: pointer;
+}
+
+.btn:hover {
+	letter-spacing: .2rem;
+}
+
+.btn__box {
+	margin-top: 2rem;
+	display: inline-block;
+	padding: .8rem 4rem;
+	font-size: 2rem;
+	color: var(--red);
+	background: var(--main-color);
+	cursor: pointer;
+}
+
+.btn__box:hover {
+	letter-spacing: .2rem;
+}
+
+.products .heading {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 50px;
+}
+
+.heading {
+	margin-top: 20px;
+}
+.header {
+	background: #010103;
+	display: flex;
+	align-items: center;
+	padding: 1.5rem 7%;
+	border-bottom: #010103;
+	justify-content: space-between;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.header .logo img {
+	width: auto;
+	height: 6rem;
+}
+
+.header .navbar {
+	font-size: 30px;
+	color: red;
+	display: flex;
+}
+
+.header .navbar a {
+	margin: 0 10px;
+	color: white;
+	text-decoration: none;
+}
+
+.header .navbar a:hover{
+	color: red;
+	border-bottom: .1rem solid red;
+	padding-bottom: .5rem;
+}
+
+.products {
+	margin-top: 150px;
+}
+
+.products .box-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 1.5rem;
+}
+
+.products .box-container .box {
+	background-color: pink;
+	grid-template-columns: none;
+}
+
+img{
+	height: auto;
+	width: 400px;
+}
+
+
+.products .box-container .image:hover {
+	cursor: pointer;
+}
+
+.products .box-container .box .content h3 {
+	text-align: center;
+	color: var(--black);
+	font-size: 2.5rem;
+}
+
+.products .box-container .box .box_price {
+	display: inline-block;
+}
+
+.products .box-container .box .content .price {
+	text-align: center;
+	margin: 30px 20px;
+	color: var(--black);
+	font-size: 2.5rem;
+}
+
+.products .box-container .box .content span {
+	text-align: center;
+	text-decoration: line-through;
+	font-weight: lighter;
+	font-size: 2rem;
+}
+
+.btn__box {
+	border: solid 1px var(--black);
+	margin-top: 30px;
+	font-size: 50px;
+}
+

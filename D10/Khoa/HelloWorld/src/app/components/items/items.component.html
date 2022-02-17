@@ -1,0 +1,15 @@
+
+<div class="products">
+	<h1 class="heading"><span>products</span>
+
+	</h1>
+	<div class="box-container">
+		<app-item  *ngFor="let item of array" [item]="item"></app-item>
+	</div>
+</div>
+
+<button style="font-size: 20px;margin-top: 10px;" (click)="getData()" >Get Total</button>
+
+<div style="font-size: 20px;margin-top: 8px;" class="footer">
+	<p>Tổng tiền: {{ resultTotal }}</p>
+</div>
