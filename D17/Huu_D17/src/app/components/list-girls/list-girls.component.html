@@ -1,0 +1,27 @@
+<!-- < <div class="container" >
+    <app-girl *ngFor="let girl of listGirl" [girl]="girl" ></app-girl>
+</div>
+
+<div class="container">
+    <div *ngFor="let girl of listGirl"  >
+        <app-girl (onChangeGirl)="girl.timelimit = $event " [girl]="girl" ></app-girl> -->
+          <!-- <app-girl (onChangeGirl)="getTotal(girl.timelimit, $event)" [girl]="girl" ></app-girl>
+        
+    </div>
+</div>  --> -->
+
+  <!-- <div>
+    <button (click)="getTotal()" style="width:200px;height:50px;text-align: left;" >
+        Total: {{tong}}
+    </button>
+     
+
+     <h3>Total: {{ tong }}</h3>
+</div>  -->
+<div *ngFor="let girl of _girl">
+    <p>Tên: {{girl.name}}</p>
+    <p>{{girl.age}} tuổi</p>
+    <p>{{girl.price}}/h</p><br>
+</div>
+
+
