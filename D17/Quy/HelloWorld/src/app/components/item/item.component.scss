@@ -1,0 +1,75 @@
+.container{
+        width: 500px;
+        height: 500px;
+        border-style: solid;
+        border-radius: 5%;
+        border-color: whitesmoke;
+        box-shadow: 10px 10px grey;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        background-color: #362222;
+        
+        
+}
+img {
+    margin: 30px 10px 20px 25px;
+    width: 90%;
+    height: 50%;
+}
+
+.name{
+    font-size: 14pt;
+    margin-left: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #516BEB;
+}
+.price{
+    font-size: 14pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+    margin-right: 25px;
+    color: aqua;
+}
+.tag{
+    margin-left: 215px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70px;
+    
+}
+.count{
+    display: flex;
+    width: 200px;
+    height: auto;
+    margin-left: 150px;
+}
+.number{
+    margin: 10px 20px 10px 20px;
+}
+.mark{
+    width: 300px;
+    height: auto;
+    background-color: whitesmoke;
+}
+.mark:hover{
+    background-color: white;
+}
+.mark:focus{
+    outline: none;
+}
+.tag:hover{
+    background-color: rgb(216, 209, 209);
+}
+.tag:focus{
+    outline: none;
+}
+.quantity{
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+    font-size: 14pt;
+    color: yellowgreen;
+}

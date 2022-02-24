@@ -1,0 +1,30 @@
+<p>
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span routerLink="" >Divine shop</span>
+    <span class="example-spacer"></span>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>search your game</mat-label>
+      <input matInput placeholder="GTA 5">
+    </mat-form-field>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>search</mat-icon>
+    </button>
+
+    <button routerLink="/cart" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>shopping_cart</mat-icon>
+    </button>
+    <p *ngIf="_user" style="margin-right: 10px;">{{_user.displayName}}</p>
+    <img *ngIf="_user" src="../../../assets/images/logodemo.jpg" style="border-radius: 100%;width: 50px;margin-right: 10px;">
+    <button (click)="login()" >
+      <mat-icon>login</mat-icon>
+    </button>
+    <button (click)="logOut()" >
+      <mat-icon>logout</mat-icon>
+    </button>
+  </mat-toolbar>
+</p>
+
+ 
