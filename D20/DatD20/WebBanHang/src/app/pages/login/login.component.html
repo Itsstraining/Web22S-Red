@@ -1,0 +1,13 @@
+<div class="body">
+    <form [formGroup]="userForm">
+        <mat-form-field appearance="fill">
+            <mat-label>Phep toan</mat-label>
+            <input formControlName="input" matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Ket qua</mat-label>
+            <input [(ngModel)]="resultKQ" formControlName="result" matInput>
+        </mat-form-field>
+        <button (click)="submit()">submit</button>
+    </form>
+</div>

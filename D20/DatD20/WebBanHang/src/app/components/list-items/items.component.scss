@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(50vh, 1fr));
+    background-color: rgb(247, 247, 247);
+    margin-top: 5vh;
+}
+
+.tinh-tien {
+    width: 20%;
+    height: 10%;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    text-align: center;
+    box-shadow: 5px 10px #888888;
+}
+
+.thanh-toan {
+    width: 20%;
+    height: 5%;
+    border-style: solid;
+    font-size: large;
+    text-align: center;
+    border-radius: 5%;
+}
+
+#thanh-toan-1:hover {
+    background-color: rgba(201, 201, 201, 0.89);
+}

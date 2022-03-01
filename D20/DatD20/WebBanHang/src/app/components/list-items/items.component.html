@@ -1,0 +1,14 @@
+<mat-progress-bar style="margin-bottom: 4vh; margin-top: 4vh;" mode="buffer"></mat-progress-bar>
+<div style="display: flex; justify-content: space-evenly;">
+    <div class="tinh-tien">Tổng số tiền: {{this.tinhtong.tongtien}} VNĐ</div>
+    <button class="thanh-toan" id="thanh-toan-1" (click)='navigate("/shopping-cart")'>Giỏ hàng</button>
+</div>
+
+<mat-progress-bar style="margin-top: 4vh;" mode="buffer"></mat-progress-bar>
+<div class="container">
+    <div *ngFor="let account of this.items" class="item">
+        <app-item [item]="account">
+
+        </app-item>
+    </div>
+</div>
