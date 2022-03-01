@@ -1,0 +1,7 @@
+<div class="container">
+    <img [src]="item.photourl">
+    <p class="name">{{item.name}}</p>
+    <p *ngIf="item.price != '0'" class="price">{{item.price | number}} vnđ</p>
+    <p *ngIf="item.price  == '0'" class="price">Free</p>
+    <p class="quantity">SL: {{item.quantity}}</p>
+</div>
