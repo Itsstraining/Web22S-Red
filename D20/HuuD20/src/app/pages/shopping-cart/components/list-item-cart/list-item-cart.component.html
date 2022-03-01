@@ -1,0 +1,13 @@
+<h3 style="text-align: center;" >
+    Danh sach san pham
+</h3>
+
+<div *ngFor="let item of _cart" >
+    <p>{{item.name}}</p>
+    <p>{{item.price}}</p>
+    <p>{{item.timelimit}}</p>
+</div>
+<hr>
+<div>
+    <p>Tong tien cua ban la: {{ total }}</p>
+</div>

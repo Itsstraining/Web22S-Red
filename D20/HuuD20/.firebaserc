@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "demoangular-7c604": {
+      "hosting": {
+        "HelloWorld": [
+          "demoangular-7c604"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "demoangular-7c604"
+  }
+}
