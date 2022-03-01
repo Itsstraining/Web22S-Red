@@ -1,0 +1,17 @@
+<form [formGroup]="form" (submit)="submit()">
+<mat-form-field appearance="fill">
+    <mat-label>Input</mat-label>
+    <input matInput formControlName = "name">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>material</mat-label>
+    <input matInput formControlName = "age">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>pass</mat-label>
+    <input matInput formControlName = "pass">
+  </mat-form-field>
+  <button>submit</button>
+  
+  
+</form>

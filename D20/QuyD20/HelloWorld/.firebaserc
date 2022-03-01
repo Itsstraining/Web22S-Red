@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fir-d2c75": {
+      "hosting": {
+        "HelloWorld": [
+          "fir-d2c75"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fir-d2c75"
+  }
+}

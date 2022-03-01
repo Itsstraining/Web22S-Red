@@ -1,0 +1,14 @@
+<div class="container-list-item">
+    <app-item *ngFor="let item of ListItem" [item]="item" (itemChange)="pay(item.quantity, $event)" ></app-item>
+</div>
+<div class="example-button-container">
+    <button mat-fab color="warn" aria-label="Example icon button with a add icon" >
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+<!-- 
+<div class="total">
+    <p>Tính tổng tiền: {{sum | number}} vnđ </p> -->
+    <!-- <button (click)="this.paymentSv.tinhTongTien(ListItem)" >total</button>  -->
+    <!-- <button (click)="pay()" >total</button>  -->
+<!-- </div> -->
