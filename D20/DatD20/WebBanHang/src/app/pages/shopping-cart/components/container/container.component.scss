@@ -1,0 +1,11 @@
+.background {
+    width: 85%;
+    height: 80%;
+    background-color: white;
+    margin: 1.5rem auto auto auto;
+    display: flex;
+    border-radius: 50px;
+    border: 0.5px solid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+}

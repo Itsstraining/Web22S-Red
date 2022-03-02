@@ -1,0 +1,12 @@
+<div class="item">
+    <img id="image" src="{{item.photoURL}}" alt="">
+    <h3 id="name">{{item.name}}</h3>
+    <h4 id="price">Giá: {{item.price}} VNĐ</h4>
+
+    <div class="btn-mua">
+        <app-counter [item]="item" (changeValue)="test($event)">
+
+        </app-counter>
+        <button matTooltip="Ấn vào để mua hàng" id="btn" (click)="this.tinhtong.thanhToan()" class="btn-muaHang">Mua Hàng</button>
+    </div>
+</div>

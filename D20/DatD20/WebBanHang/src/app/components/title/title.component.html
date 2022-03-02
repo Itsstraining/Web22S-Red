@@ -1,0 +1,26 @@
+<p>
+    <mat-toolbar color="primary">
+        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/home">Trang chủ</button>
+            <button mat-menu-item>Option 2</button>
+            <button mat-menu-item>Option 3</button>
+            <button mat-menu-item>Option 4</button>
+            <button mat-menu-item>Option 5</button>
+            <button mat-menu-item>Option 6</button>
+        </mat-menu>
+        <span class="name-shop" routerLink="/">Dat Shop</span>
+        <span class="example-spacer"></span>
+        <button mat-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+        </button>
+        <p *ngIf="user">{{user.displayName}}</p>
+        <button mat-button class="example-icon" aria-label="Example icon-button with share icon" (click)="navigate('/login')" (submit)="submit()">
+          <mat-icon (click)="login()">login</mat-icon>
+        </button>
+        <button mat-button class="example-icon" aria-label="Example icon-button with share icon" (click)="navigate('')" (submit)="submit()">
+        <mat-icon (click)="logout()"  >logout</mat-icon>
+      </button>
+
+    </mat-toolbar>
+</p>

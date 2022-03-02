@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fir-firebase-fc13d": {
+      "hosting": {
+        "WebBanHang": [
+          "fir-firebase-fc13d"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fir-firebase-fc13d"
+  }
+}
