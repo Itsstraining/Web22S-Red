@@ -4,7 +4,12 @@ const { request } = require("express");
 const express = require("express");
 const sever = express();
 sever.use(bodyParser());
-let arr =[]
+let arr =[
+    {name:"Quý",age:"20"},
+    { name: 'Trọng', age: '20' },
+    { name: 'Xôi', age: '27' },
+    { name: 'Kiên', age: '22' }
+]
 sever.get("/",(request,response)=>{
     let name = request.query.name;
     let age = request.query.age;
@@ -37,6 +42,23 @@ sever.post("/",(request,response)=>{
         });
     } 
 });
+sever.put("/",(request,response)=>{
+    let temp = request.body;
+    let name = temp.name;
+    for (let i=0;i<arr.length;i++)
+    {
+        if (name==arr[i].name)
+        {
+            arr[i]={...temp};
+        }
+    }
+    response.send({respone:arr});
+    
+})
+
+sever.delete("/",(request,response)=>{
+
+})
 
 sever.listen(3000,()=>{
     console.log("Chạy được rồi");
