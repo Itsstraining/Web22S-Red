@@ -26,7 +26,7 @@ sever.get("/",(request,response)=>{
     }   
 })
 
-sever.post("/",(request,response)=>{
+sever.post("/post",(request,response)=>{
     let temp = request.body;
     let name = temp.name;
     let age = temp.age;
@@ -42,7 +42,7 @@ sever.post("/",(request,response)=>{
         });
     } 
 });
-sever.put("/",(request,response)=>{
+sever.put("/put",(request,response)=>{
     let temp = request.body;
     let name = temp.name;
     for (let i=0;i<arr.length;i++)
@@ -56,7 +56,7 @@ sever.put("/",(request,response)=>{
     
 })
 
-sever.delete("/",(request,response)=>{
+sever.delete("/delete",(request,response)=>{
 
 })
 
