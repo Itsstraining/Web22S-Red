@@ -41,7 +41,16 @@ server.put("/put",(request,respone)=>{
 })
 
 server.delete("/delete",(request,respone)=>{
-    
+    let temp=request.body
+    let age=temp.age;
+    for (let i=0;i<arr.length;i++)
+    {
+        if (age==arr[i].age)
+        {
+            arr.splice(i,1);
+        }
+    }
+    respone.send({respone:arr});
 })
 
 server.listen(3000,()=>{
